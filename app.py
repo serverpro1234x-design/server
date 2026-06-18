@@ -15,6 +15,7 @@ def receive_logs():
             f.write("-" * 50 + "\n")
             f.write(data)
         print(f"[+] Napló mentve: {filename}")
+        print(f"[+] Tartalom: {data[:500]}...")
         return "OK", 200
     return "HIBA", 400
 
